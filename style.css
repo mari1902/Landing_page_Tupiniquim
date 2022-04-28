@@ -1,0 +1,41 @@
+.foto {
+    background-image: url(NO_Amazonas0013.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#visitante {
+    width: 350px;
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+#fornecedor {
+    width: 350px;
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+#workshop {
+    width: 350px;
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+#botao {
+    display: flex;
+    align-content: center;
+    margin: auto;
+}

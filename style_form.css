@@ -1,0 +1,105 @@
+:root {
+    --cor0:#11A958;
+    --cor1:#064133;
+    --cor2:#C9FFC7;
+    --cor3:#FFC700;
+    --cor4:#FF8575;
+    --cor5:#25CDDA;
+    --cor6:#6B9BF8;
+   
+    --fonte-padrao: 'Open Sans', Arial, Verdana, sans-serif;
+}
+
+* {
+    margin: 0px; 
+    padding: 0px;
+}
+
+body {
+    background-image: url(NO_Amazonas0013.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+header {
+    background-color: var(--cor3);
+}
+
+#menu {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 15px 10px 15px 10px;
+}
+
+nav a {
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-style: var(--fonte-padrao);
+}
+
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+#logo {
+    width: 150px;
+    height: 50px;
+    margin: 0;
+    position: absolute;
+    display: flex;
+}
+main {
+    display: grid;
+    grid-template-areas: 
+    "tourist supplier workshop";
+    grid-template-columns: 300px 300px 300px;
+    padding: 20px;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+form {
+    background-color: white;
+    height: 500px;
+    text-align: center;
+}
+
+#tourist {
+    display: grid;
+    grid-template-areas: "infoturist" "infoturist2" "button"; 
+    grid-template-rows: 80px 200px 1fr;
+}
+
+#infoturist {
+   
+}
+
+#infoturist2 {
+
+}
+
+#button {
+
+}
+
+#supplier {
+    display: grid;
+}
+
+#workshop {
+    display: grid;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    background-color: #FFC700;
+}
