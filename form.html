@@ -38,6 +38,44 @@
                         >
                     </label>
                 </div>
+                <div>
+                    <label>Onde mora?
+                        <select name="touriststate" id="touriststate" required>
+                            <option>Estado</option>
+                            <option value="Acre">Acre</option>
+                            <option value="Alagoas">Alagoas</option>
+                            <option value="Amapá">Amapá</option>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Bahia">Bahia</option>
+                            <optionv alue="Ceará">Ceará</option>
+                            <option  value="Distrito Federal">Distrito Federal</option>
+                            <option value="Espírito Santo">Espírito Santo</option>
+                            <option value="Goiás">Goiás</option>
+                            <option value="Maranhão">Maranhão</option>
+                            <option value="Mato Grosso">Mato Grosso</option>
+                            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                            <option value="Minas Gerais">Minas Gerais</option>
+                            <option value="Pará">Pará</option>
+                            <option value="Paraíba">Paraíba</option>
+                            <option value="Paraná">Paraná</option>
+                            <option value="Pernambuco">Pernambuco</option>
+                            <option value="Piauí">Piauí</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                            <option value="Rondônia">Rondônia</option>
+                            <option value="Roraima">Roraima</option>
+                            <option value="Santa Catarina">Santa Catarina</option>
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Sergipe">Sergipe</option>
+                            <option value="Tocantins">Tocantins</option>
+                        </select>
+                        </label>
+                        <div>
+                            <label class="label">Cidade
+                            <input class="input" type="text" placeholder=""></label>
+                        </div>
+                </div>
             </fieldset>
         
             <fieldset id="infotourist2">
@@ -73,39 +111,44 @@
                         <option value="Sergipe">Sergipe</option>
                         <option value="Tocantins">Tocantins</option>
                     </select>
-                </label>
-                    <label class="label">Cidade</label>
-                    <input class="input" type="text" placeholder="">
-                </div>
-                <div>
-                    <label class="checkbox">
-                        Que tipo de experiência busca no Brasil?
-                        <input type="checkbox" name="interest">
-                        Natureza
-                        <input type="checkbox" name="interest">
-                        Natureza
-                        <input type="checkbox" name="interest">
-                        Natureza
-                        <input type="checkbox" name="interest">
-                        Natureza
-                        <input type="checkbox" name="interest">
-                        Natureza
-                        <input type="checkbox" name="interest">
-                        Natureza
-                        <input type="checkbox" name="interest">
-                        Natureza
-                        <input type="checkbox" name="interest">
-                        Natureza
                     </label>
+                    <div>
+                        <label class="label">Cidade
+                        <input class="input" type="text" placeholder=""></label>
+                    </div>
                 </div>
+            </fieldset>    
+            <fieldset id="checkboxtourist">
+                <div>
+                        <label class="checkboxtourist">
+                            Que tipo de experiência busca no Brasil?
+                            <input type="checkbox" name="interest">
+                            Natureza
+                            <input type="checkbox" name="interest">
+                            Natureza
+                            <input type="checkbox" name="interest">
+                            Natureza
+                            <input type="checkbox" name="interest">
+                            Natureza
+                            <input type="checkbox" name="interest">
+                            Natureza
+                            <input type="checkbox" name="interest">
+                            Natureza
+                            <input type="checkbox" name="interest">
+                            Natureza
+                            <input type="checkbox" name="interest">
+                            Natureza
+                        </label>
+                    </div>
             </fieldset>
-            <div>
+            
+            <div class= "button">
                 <input type="button" value="Cadastrar">
             </div>
         </form>
         
         <form id="supplier" action="">
-            <fieldset>
+            <fieldset id="infosupplier">
                 <div>
                     <label for="">
                         Nome do responsável: <input type="text" name="nome" required id="" autocomplete="name" placeholder="Digite seu nome completo" >
@@ -122,7 +165,8 @@
                         >
                     </label>
                 </div>
-        
+           </fieldset>
+            <fieldset id="infosupplier2">
                 <div>
                     <label for="">Qual sua localização?
                     <select name="supplierstate" id="supplierstate" required>
@@ -156,19 +200,18 @@
                         <option value="Tocantins">Tocantins</option>
                     </select>
                     </label>
-        
                     <label class="label">Cidade</label>
                     <input class="input" type="text" placeholder="">
                 </div>
-            </fieldset>
-        
-            <fieldset>
+            
                 <label>Qual o nome das suas experiências?</label>
                     <div>
                         <textarea id="experiencename" name="experiencename" cols="30" rows="7"
                         placeholder="ex: Imersão de 3 dias com birdwatching, Passeio gastronômico no melhor de São Paulo, etc"></textarea>
                     </div>
+            </fieldset>
         
+            <fieldset id="checkboxsupplier">
                 <label class="segment_checkbox">
                     <p>Qual o segmento da sua experiência?</p>
                     <input type="checkbox" name="segment">
@@ -189,13 +232,13 @@
                     Natureza
                 </label>
             </fieldset>
-            <div>
+            <div class= "button">
                 <input type="button" value="Cadastrar">
             </div>
         </form>
         
         <form id="workshop" action="">
-            <fieldset>
+            <fieldset id="infoworkshop">
                 <div>
                     <label for="">
                         Nome Completo
@@ -209,51 +252,53 @@
                         title="Por favor adicione um e-mail válido">
                     </label>
                 </div>
-                <div>
+            </fieldset>   
+                
+            <fieldset>
+                <div id="infoworkshop2">
                     <label for="">Onde você mora?
                         <select name="estadoworkshop" id="estadoworkshop">
-                            <option>Estado </option>
-                            <option value="Acre">Acre</option>
-                            <option value="Alagoas">Alagoas</option>
-                            <option value="Amapá">Amapá</option>
-                            <option value="Amazonas">Amazonas</option>
-                            <option value="Bahia">Bahia</option>
-                            <optionv alue="Ceará">Ceará</option>
-                            <option  value="Distrito Federal">Distrito Federal</option>
-                            <option value="Espírito Santo">Espírito Santo</option>
-                            <option value="Goiás">Goiás</option>
-                            <option value="Maranhão">Maranhão</option>
-                            <option value="Mato Grosso">Mato Grosso</option>
-                            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-                            <option value="Minas Gerais">Minas Gerais</option>
-                            <option value="Pará">Pará</option>
-                            <option value="Paraíba">Paraíba</option>
-                            <option value="Paraná">Paraná</option>
-                            <option value="Pernambuco">Pernambuco</option>
-                            <option value="Piauí">Piauí</option>
-                            <option value="Rio de Janeiro">Rio de Janeiro</option>
-                            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-                            <option value="Rondônia">Rondônia</option>
-                            <option value="Roraima">Roraima</option>
-                            <option value="Santa Catarina">Santa Catarina</option>
-                            <option value="São Paulo">São Paulo</option>
-                            <option value="Sergipe">Sergipe</option>
-                            <option value="Tocantins">Tocantins</option>
-                        </select>
+                             <option>Estado </option>
+                             <option value="Acre">Acre</option>
+                             <option value="Alagoas">Alagoas</option>
+                             <option value="Amapá">Amapá</option>
+                             <option value="Amazonas">Amazonas</option>
+                             <option value="Bahia">Bahia</option>
+                             <optionv alue="Ceará">Ceará</option>
+                             <option  value="Distrito Federal">Distrito Federal</option>
+                             <option value="Espírito Santo">Espírito Santo</option>
+                             <option value="Goiás">Goiás</option>
+                             <option value="Maranhão">Maranhão</option>
+                             <option value="Mato Grosso">Mato Grosso</option>
+                             <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                             <option value="Minas Gerais">Minas Gerais</option>
+                             <option value="Pará">Pará</option>
+                             <option value="Paraíba">Paraíba</option>
+                             <option value="Paraná">Paraná</option>
+                             <option value="Pernambuco">Pernambuco</option>
+                             <option value="Piauí">Piauí</option>
+                             <option value="Rio de Janeiro">Rio de Janeiro</option>
+                             <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                             <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                             <option value="Rondônia">Rondônia</option>
+                             <option value="Roraima">Roraima</option>
+                             <option value="Santa Catarina">Santa Catarina</option>
+                             <option value="São Paulo">São Paulo</option>
+                             <option value="Sergipe">Sergipe</option>
+                             <option value="Tocantins">Tocantins</option>
+                         </select>
                     </label>
                 </div>
                 <div id="cidade">
-                    <label>Cidade</label>
-                    <input class="input" type="text" placeholder="" required>
+                     <label>Cidade</label>
+                     <input class="input" type="text" placeholder="" required>
                 </div>
             </fieldset>
-        
-        
-            <fieldset>
+           
+            <fieldset id="checkboxworkshop">
                <legend>Quais atrativos sua cidade possui para poder criar uma experiência turística?</legend>
                <label></label>
-                    <textarea id="attractions" name="attractions" cols="30" rows="7" placeholder="Mencione locais, cultura, tradições, eventos interessantes da sua região."></textarea>
+                    <textarea id="attractions" name="attractions" cols="30" rows="5" placeholder="Mencione locais, cultura, tradições, eventos interessantes da sua região."></textarea>
         
                 <div>
                     <label class="checkbox">
@@ -289,7 +334,9 @@
                 <input type="radio" name="question" value="no">
         
             </fieldset>
-                <input type="button" value="Cadastrar">
+            
+            <div class= "button">    
+            <input type="button" value="Cadastrar">
             </div>
         </form>
     </main>

@@ -64,38 +64,54 @@ main {
     padding: 20px;
     column-gap: 30px;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+fieldset {
+    border: 0;
 }
 
 form {
     background-color: white;
-    height: 500px;
+    height: 600px;
     text-align: center;
+    align-items: center;
+    padding: 12px;
+    box-shadow: 1px black solid;
+    border-radius: ;
 }
 
 #tourist {
-    display: grid;
-    grid-template-areas: "infoturist" "infoturist2" "button"; 
-    grid-template-rows: 80px 200px 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8em;
 }
 
-#infoturist {
-   
-}
-
-#infoturist2 {
-
-}
-
-#button {
-
+#infotourist {
+    line-height: 2em;
 }
 
 #supplier {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8em;
 }
 
 #workshop {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8em;
+}
+
+.button {
+    
 }
 
 footer {
