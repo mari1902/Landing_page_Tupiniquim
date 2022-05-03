@@ -32,6 +32,7 @@ header {
     justify-content: right;
     list-style: none;
     padding: 15px 10px 15px 10px;
+    align-items: center;
 }
 
 nav a {
