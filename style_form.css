@@ -32,7 +32,6 @@ header {
     justify-content: right;
     list-style: none;
     padding: 15px 10px 15px 10px;
-    align-items: center;
 }
 
 nav a {
@@ -58,15 +57,13 @@ nav a:hover {
     display: flex;
 }
 main {
-    display: grid;
-    grid-template-areas: 
-    "tourist supplier workshop";
-    grid-template-columns: 300px 300px 300px;
+    display: flex;
     padding: 20px;
     column-gap: 30px;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-wrap: wrap;
 }
 
 fieldset {
@@ -168,6 +165,7 @@ form {
     background-color: white;
     transform: rotateY(180deg);
 }
+
 #workshop {
     display: flex;
     flex-direction: column;
@@ -176,8 +174,8 @@ form {
     line-height: 1.8em;
 }
 
-.button {
-    
+button {
+
 }
 
 footer {
