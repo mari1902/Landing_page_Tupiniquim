@@ -105,9 +105,9 @@ form {
 }
 
 .card .front-tourist {
-    background: rgb(201,255,199);
-    background: linear-gradient(90deg, rgba(201,255,199,1) 0%, rgba(255,199,0,1) 35%, rgba(37,205,218,1) 100%);
-    color: whitesmoke;
+    background: rgb(17,169,88,1);
+    background: linear-gradient(90deg, rgba(17,169,88,1) 0%, rgba(255, 200, 0, 0.645) 35%, rgba(255, 133, 117, 0.669) 100%);
+    color:whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,8 +132,8 @@ form {
 }
 
 .card .front-supplier {
-    background: rgb(201,255,199);
-    background: linear-gradient(90deg, rgba(201,255,199,1) 0%, rgba(255,199,0,1) 35%, rgba(37,205,218,1) 100%);
+    background: rgb(17,169,88,1);
+    background: linear-gradient(90deg, rgba(17,169,88,1) 0%, rgba(255, 200, 0, 0.645) 35%, rgba(255, 133, 117, 0.669) 100%);
     color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -155,8 +155,8 @@ form {
 }
 
 .card .front-workshop {
-    background: rgb(201,255,199);
-    background: linear-gradient(90deg, rgba(201,255,199,1) 0%, rgba(255,199,0,1) 35%, rgba(37,205,218,1) 100%);
+    background: rgb(17,169,88,1);
+    background: linear-gradient(90deg, rgba(17,169,88,1) 0%, rgba(255, 200, 0, 0.645) 35%, rgba(255, 133, 117, 0.669) 100%);
     color: whitesmoke;
     display: flex;
     justify-content: center;
