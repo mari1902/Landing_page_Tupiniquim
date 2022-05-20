@@ -105,7 +105,8 @@ form {
 }
 
 .card .front-tourist {
-    background-color: #11A958;
+    background: rgb(201,255,199);
+    background: linear-gradient(90deg, rgba(201,255,199,1) 0%, rgba(255,199,0,1) 35%, rgba(37,205,218,1) 100%);
     color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -131,7 +132,8 @@ form {
 }
 
 .card .front-supplier {
-    background-color: #11A958;
+    background: rgb(201,255,199);
+    background: linear-gradient(90deg, rgba(201,255,199,1) 0%, rgba(255,199,0,1) 35%, rgba(37,205,218,1) 100%);
     color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -153,7 +155,8 @@ form {
 }
 
 .card .front-workshop {
-    background-color: #11A958;
+    background: rgb(201,255,199);
+    background: linear-gradient(90deg, rgba(201,255,199,1) 0%, rgba(255,199,0,1) 35%, rgba(37,205,218,1) 100%);
     color: whitesmoke;
     display: flex;
     justify-content: center;
