@@ -104,9 +104,13 @@ form {
     backface-visibility: hidden;
 }
 
-.card .front-tourist {
-    background: rgb(17,169,88,1);
-    background: linear-gradient(90deg, rgba(17,169,88,1) 0%, rgba(255, 200, 0, 0.645) 35%, rgba(255, 133, 117, 0.669) 100%);
+.card .front-tourist .front-supplier .front-workshop {
+    background: rgba( 248, 240, 240, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     color:whitesmoke;
     display: flex;
     justify-content: center;
@@ -114,68 +118,26 @@ form {
     text-align: center;
 } 
 
-.card .back-tourist { 
-    background-color: white;
+.card .back-tourist .back-supplier .back-workshop { 
+    background-color: rgba(245, 245, 245, 0.59);
+    border-radius: 10px;
     transform: rotateY(180deg);
 }
 
-#tourist {
+#tourist  #supplier #workshop {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 1.8em;
+    background-color: rgba(245, 245, 245, 0.59);
+    border-radius: 10px;
 }
 
 #infotourist {
     line-height: 2em;
 }
 
-.card .front-supplier {
-    background: rgb(17,169,88,1);
-    background: linear-gradient(90deg, rgba(17,169,88,1) 0%, rgba(255, 200, 0, 0.645) 35%, rgba(255, 133, 117, 0.669) 100%);
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.card .back-supplier { 
-    background-color: white;
-    transform: rotateY(180deg);
-}
-
-#supplier {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.8em;
-}
-
-.card .front-workshop {
-    background: rgb(17,169,88,1);
-    background: linear-gradient(90deg, rgba(17,169,88,1) 0%, rgba(255, 200, 0, 0.645) 35%, rgba(255, 133, 117, 0.669) 100%);
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.card .back-workshop { 
-    background-color: white;
-    transform: rotateY(180deg);
-}
-
-#workshop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.8em;
-}
 
 button {
 
