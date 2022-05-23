@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MVP-Formulário</title>
     <script src="https://kit.fontawesome.com/b989f9f7fd.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style_form.css">
 </head>
 
@@ -25,21 +25,21 @@
     <main>
         <div class="card-container">
             <div class="card">
-                <figure class="front-tourist">
+                <figure class="front" id="front-tourist">
                     <h1>Quer conhecer experiências maravilhosas de viagem da Tupiniquim.com?</h1>
                 </figure>
-                <figure class="back-tourist">
+                <figure class="back" id="back-tourist">
                     <form id="tourist" action="">
                         <fieldset id="infotourist">
                             <div>
                                 <label for="">Nome Completo
-                                    <input type="text" name="nome" required id="" autocomplete="name" placeholder="Digite seu nome completo" >
+                                    <input type="text" name="nome" required id="" autocomplete="name" placeholder="" >
                                 </label>
                             </div>
                             <div>
                                 <label for="">
                                     E-mail:
-                                    <input type="email"  name="email" required autocomplete="email" placeholder="Digite seu melhor e-mail" inputmode="email"
+                                    <input type="email"  name="email" required autocomplete="email" placeholder="" inputmode="email"
                                     title="Por favor adicione um e-mail válido"
                                     >
                                 </label>
@@ -128,28 +128,46 @@
                             <div>
                                     <label class="checkboxtourist">
                                         Que tipo de experiência busca no Brasil?
-                                        <input type="checkbox" name="interest">
-                                        Natureza
-                                        <input type="checkbox" name="interest">
-                                        Natureza
-                                        <input type="checkbox" name="interest">
-                                        Natureza
-                                        <input type="checkbox" name="interest">
-                                        Natureza
-                                        <input type="checkbox" name="interest">
-                                        Natureza
-                                        <input type="checkbox" name="interest">
-                                        Natureza
-                                        <input type="checkbox" name="interest">
-                                        Natureza
-                                        <input type="checkbox" name="interest">
-                                        Natureza
+                                        <ul class="categorias">
+                                            <li>
+                                                <input type="checkbox" name="interest">
+                                                Natureza
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="interest">
+                                                Natureza
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="interest">
+                                                Natureza
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="interest">
+                                                Natureza
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="interest">
+                                                Natureza
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="interest">
+                                                Natureza
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="interest">
+                                                Natureza
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="interest">
+                                                Natureza
+                                            </li>
+                                        </ul>
                                     </label>
                                 </div>
                         </fieldset>
                 
-                        <div class= "button">
-                            <input type="button" value="Cadastrar">
+                        <div>
+                            <input class= "button"  type="button" value="Cadastrar">
                         </div>
                     </form>
                 </figure>
@@ -158,19 +176,21 @@
 
         <div class="card-container">
             <div class="card">
-                <figure class="front-supplier">
+                <figure class="front" id="front-supplier">
                     <h1>Você possui uma experiência incrível para oferecer para o mundo?</h1>
                 </figure>
-                <figure class="back-supplier">
+                <figure class="back" id="back-supplier">
                     <form id="supplier" action="">
                         <fieldset id="infosupplier">
                             <div>
                                 <label for="">
-                                    Nome do responsável: <input type="text" name="nome" required id="" autocomplete="name" placeholder="Digite seu nome completo" >
+                                    Nome da empresa: <input type="text" name="nome" id="" autocomplete="name" placeholder="" >
                                 </label>
                                 <label for="">
-                                    Nome da empresa: <input type="text" name="nome" id="" autocomplete="name" placeholder="opcional" >
+                                    Responsável: <input type="text" name="nome" required id="" autocomplete="name" placeholder="Nome do responsável" >
                                 </label>
+                                <br>
+                                
                             </div>
                             <div>
                                 <label for="">
@@ -215,6 +235,7 @@
                                     <option value="Tocantins">Tocantins</option>
                                 </select>
                                 </label>
+                                <br>
                                 <label class="label">Cidade</label>
                                 <input class="input" type="text" placeholder="">
                             </div>
@@ -229,26 +250,44 @@
                         <fieldset id="checkboxsupplier">
                             <label class="segment_checkbox">
                                 <p>Qual o segmento da sua experiência?</p>
-                                <input type="checkbox" name="segment">
-                                Natureza
-                                <input type="checkbox" name="segment">
-                                Natureza
-                                <input type="checkbox" name="segment">
-                                Natureza
-                                <input type="checkbox" name="segment">
-                                Natureza
-                                <input type="checkbox" name="segment">
-                                Natureza
-                                <input type="checkbox" name="segment">
-                                Natureza
-                                <input type="checkbox" name="segment">
-                                Natureza
-                                <input type="checkbox" name="segment">
-                                Natureza
+                                <ul class="categorias">
+                                    <li>
+                                        <input type="checkbox" name="segment">
+                                        Natureza
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="segment">
+                                        Natureza
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="segment">
+                                        Natureza
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="segment">
+                                        Natureza
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="segment">
+                                        Natureza
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="segment">
+                                        Natureza
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="segment">
+                                        Natureza
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="segment">
+                                        Natureza
+                                    </li>
+                                </ul>
                             </label>
                         </fieldset>
-                        <div class= "button">
-                            <input type="button" value="Cadastrar">
+                        <div>
+                            <input class= "button" type="button" value="Cadastrar">
                         </div>
                     </form>
                 </figure>
@@ -257,22 +296,22 @@
         
         <div class="card-container">
             <div class="card">
-                <figure class="front-workshop">
+                <figure class="front" id="front-workshop">
                     <h1>Você gostaria de desenvolver alguma experiência na sua cidade?</h1>
                 </figure>
-                <figure class="back-workshop">
+                <figure class="back" id="back-workshop">
                     <form id="workshop" action="">
                         <fieldset id="infoworkshop">
                             <div>
                                 <label for="">
                                     Nome Completo
-                                    <input type="text" name="nome" required id="" autocomplete="name" placeholder="Digite seu nome completo" >
+                                    <input type="text" name="nome" required id="" autocomplete="name" placeholder="" >
                                 </label>
                             </div>
                             <div>
                                 <label for="">
                                     E-mail:
-                                    <input type="email"  name="email" required autocomplete="email" placeholder="Digite seu e-mail" inputmode="email"
+                                    <input type="email"  name="email" required autocomplete="email" placeholder="" inputmode="email"
                                     title="Por favor adicione um e-mail válido">
                                 </label>
                             </div>
@@ -327,29 +366,47 @@
                             <div>
                                 <label class="checkbox">
                                     <p>Em qual tipo de segmento sua cidade se encaixa?</p>
-                                    <input type="checkbox"required>
-                                    Natureza
-                                    <input type="checkbox" name="workshop">
-                                    Natureza
-                                    <input type="checkbox" name="workshop">
-                                    Natureza
-                                    <input type="checkbox" name="workshop">
-                                    Natureza
-                                    <input type="checkbox" name="workshop">
-                                    Natureza
-                                    <input type="checkbox" name="workshop">
-                                    Natureza
-                                    <input type="checkbox" name="workshop">
-                                    Natureza
-                                    <input type="checkbox" name="workshop">
-                                    Natureza
+                                    <ul class="categorias">
+                                        <li>
+                                            <input type="checkbox"required>
+                                            Natureza
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="workshop">
+                                            Natureza
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="workshop">
+                                            Natureza
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="workshop">
+                                            Natureza
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="workshop">
+                                            Natureza
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="workshop">
+                                            Natureza
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="workshop">
+                                            Natureza
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="workshop">
+                                            Natureza
+                                        </li>
+                                    </ul>
                                 </label>
                             </div>
                         </fieldset>
                     
                         <fieldset>
                             <legend>
-                                Você acha que seria interessante ter um workshop para ensinar a  criar uma experiência turística na sua cidade?
+                                Seria interessante ter um workshop para ensinar a  criar uma experiência turística na sua cidade?
                             </legend>
                             <label for="yes"> Sim</label>
                             <input type="radio" name="question" value="yes">
@@ -359,8 +416,8 @@
                     
                         </fieldset>
                     
-                        <div class= "button">
-                        <input type="button" value="Cadastrar">
+                        <div>
+                        <input class= "button"  type="button" value="Cadastrar">
                         </div>
                     </form>
                 </figure>
